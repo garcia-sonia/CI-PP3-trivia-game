@@ -26,7 +26,7 @@ def play_quiz(keys):
         answer = input(key.prompt)
         if answer == key.answer:
             score += 1
-    print("you got", score, "out of", len(questions))
+    print("you got", score, "out of", len(questions_asked))
 
 
 play_quiz(keys)
