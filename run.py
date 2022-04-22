@@ -45,6 +45,9 @@ def enter_favorite_song():
     if favorite_song == '':
         print("Please enter your favorite song!")
         print('')
+    else:
+        print(f"Thank you {user_name} let's start the quiz!\n")
+        print('')
 
 
 enter_favorite_song()
