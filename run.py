@@ -34,18 +34,20 @@ def introduce_quiz():
     print(user_instructions)
     print('')
     
+
 introduce_quiz()
 
 
 
+def enter_favorite_song():
+    favorite_song = input("Please enter your favorite song to start your quiz\n")
+    print('')
+    if favorite_song == '':
+        print("Please enter your favorite song!")
+        print('')
 
-password = input("Please enter your password to access your coding tests")
-print("That is not your assigned password")
-quit()
 
-print("It looks like you can\'t remberber your password. Would you like a hint?")
-
-
+enter_favorite_song()
 
 
 
