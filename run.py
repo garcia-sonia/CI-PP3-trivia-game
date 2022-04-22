@@ -54,7 +54,15 @@ def enter_favorite_song():
 
 enter_favorite_song()
 
+def favorite_decade():
+    user_decade = input("Choose your favorite decade: 70s / 80s / 90s / 2000s\n")
+    if user_decade == "80s":
+        play_quiz_80(keys)
+    else:
+        quit()
 
+
+favorite_decade()
 
 
 class Key:
@@ -66,7 +74,7 @@ class Key:
 
 questions_asked = [
     "What is the most commonly broken human bone?\n(a) femur\n(b)clavicle\n",
-    "What vitamin is sometimes refered to as the sunshine vitamin?\n(a) vitamin A\n(b)vitamin D",
+    "What vitamin is sometimes refered to as the sunshine vitamin?\n(a) vitamin A\n(b)vitamin Db",
 ]
 
 keys = [
@@ -74,15 +82,17 @@ keys = [
     Key(questions_asked[1], "b")
 ]
 
-def play_quiz(keys):
-    '''function
+
+def play_quiz_80(keys):
+    '''
+    function
     '''
     score = 0
-    for key in keys:
+    for key in keys_80:
         answer = input(key.prompt)
         if answer == key.answer:
             score += 1
     print("you got", score, "out of", len(questions_asked))
 
 
-play_quiz(keys)
+play_quiz_80(keys)
