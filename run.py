@@ -2,7 +2,7 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
-import getpass
+
 
 user_instructions = """Pick your decade, guess the band or the song,
 find out your score"""
