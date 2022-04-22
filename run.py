@@ -4,8 +4,10 @@
 
 
 
-user_instructions = """Guess the band, the song or the lyrics,
-and find out your score"""
+user_instructions = """In this quiz you'll need to guess the band,
+the song or the lyrics. There are 20 questions and you will
+get your final 'Top of the Pops' score after answering all the questions.
+"""
 
 def introduce_quiz():
     """
@@ -15,11 +17,11 @@ def introduce_quiz():
     the name input empty.
     Print also the instructions for the quiz
     """
-    print('*' * 80)
+    print('*' * 60)
     print('')
     print("Welcome to the 'Top of the Pops' quiz")
     print('')
-    print('*' * 80)
+    print('*' * 60)
     print('')
     global user_name
     while True:
@@ -30,7 +32,7 @@ def introduce_quiz():
             print('')
         else:
             break
-    print(f"Welcome {user_name}! Let's find out how much you know!")
+    print(f"Welcome {user_name}!")
     print(user_instructions)
     print('')
     
@@ -40,10 +42,10 @@ introduce_quiz()
 
 
 def enter_favorite_song():
-    favorite_song = input("Please enter your favorite song to start your quiz\n")
+    favorite_song = input("Before we start the quiz, please enter your favourite band for our records\n")
     print('')
     if favorite_song == '':
-        print("Please enter your favorite song!")
+        print("Please enter your favorite band!")
         print('')
     else:
         print(f"Thank you {user_name} let's start the quiz!\n")
@@ -63,7 +65,7 @@ class Key:
 
 
 questions_asked = [
-    "What is the most commonly broken human bone?\n(a) femur\n(b)clavicle",
+    "What is the most commonly broken human bone?\n(a) femur\n(b)clavicle\n",
     "What vitamin is sometimes refered to as the sunshine vitamin?\n(a) vitamin A\n(b)vitamin D",
 ]
 
