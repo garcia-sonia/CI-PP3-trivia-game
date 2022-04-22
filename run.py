@@ -4,8 +4,8 @@
 
 
 
-user_instructions = """Pick your decade, guess the band or the song,
-find out your score"""
+user_instructions = """Guess the band, the song or the lyrics,
+and find out your score"""
 
 def introduce_quiz():
     """
@@ -17,7 +17,7 @@ def introduce_quiz():
     """
     print('*' * 80)
     print('')
-    print("Welcome to 'Guess the Band - Guess the Song'")
+    print("Welcome to the 'Top of the Pops' quiz")
     print('')
     print('*' * 80)
     print('')
