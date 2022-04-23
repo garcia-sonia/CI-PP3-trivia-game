@@ -54,6 +54,7 @@ def enter_favorite_song():
 
 enter_favorite_song()
 
+'''
 def favorite_decade():
     user_decade = input("Choose your favorite decade: 70s / 80s / 90s / 2000s\n")
     if user_decade == "80s":
@@ -63,7 +64,7 @@ def favorite_decade():
 
 
 favorite_decade()
-
+'''
 
 class Key:
     def __init__(self, prompt, answer):
@@ -83,16 +84,16 @@ keys = [
 ]
 
 
-def play_quiz_80(keys):
+def play_quiz(keys):
     '''
     function
     '''
     score = 0
-    for key in keys_80:
+    for key in keys:
         answer = input(key.prompt)
         if answer == key.answer:
             score += 1
     print("you got", score, "out of", len(questions_asked))
 
 
-play_quiz_80(keys)
+play_quiz(keys)
